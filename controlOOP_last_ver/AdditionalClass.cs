@@ -24,17 +24,21 @@ namespace controlOOP_last_ver
 
             for (int i = 0; i < temp.Length; i++)
             {
-                if (TypeFile.Text.ToString() == GetTypeFile(temp[i]))
+                if (EnumClass.TypeFile.Text.ToString() == GetTypeFile(temp[i]))
                 {
                     list.Add(new TextFile(temp[i]));
                 }
-                if (TypeFile.Movie.ToString() == GetTypeFile(temp[i]))
+                if (EnumClass.TypeFile.Movie.ToString() == GetTypeFile(temp[i]))
                 {
                     list.Add(new MovieFile(temp[i]));
                 }
-                if (TypeFile.Image.ToString() == GetTypeFile(temp[i]))
+                if (EnumClass.TypeFile.Image.ToString() == GetTypeFile(temp[i]))
                 {
                     list.Add(new ImageFile(temp[i]));
+                }
+                else
+                {
+                    throw new Exception("there is no sucj type");
                 }
             }
             return list;
