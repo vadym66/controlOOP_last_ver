@@ -8,9 +8,6 @@ namespace controlOOP_last_ver
 {
     public static class AdditionalClass
     {
-        public enum TypeFile { Text, Image, Movie };
-        public enum SizeFile { B, KB, MB, GB }; //Sorted by Size  Doesn't implement yet
-
         public static string GetTypeFile(string c) // File, Image, Movie, etc..
         {
             Char charRange = ':';
