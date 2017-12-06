@@ -17,7 +17,7 @@ namespace controlOOP_last_ver
 
         public override String ToString()
         {
-            return base.ToString() + $"Duartion: {LengthOfFile}";
+            return base.ToString() + $"\t\tDuartion: {LengthOfFile}";
         }
     }
 }

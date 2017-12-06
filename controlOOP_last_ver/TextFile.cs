@@ -12,12 +12,12 @@ namespace controlOOP_last_ver
 
         public TextFile(string splitedLine) : base(splitedLine)
         {
-            ContentOfFile = subLine[3];
+            ContentOfFile = subLine[3].TrimStart();
         }
 
         public override String ToString()
         {
-            return base.ToString() + $"Content: {ContentOfFile}\n";
+            return base.ToString() + $"\t\tContent: {ContentOfFile}\n";
         }
 
 

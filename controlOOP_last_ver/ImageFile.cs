@@ -17,7 +17,7 @@ namespace controlOOP_last_ver
 
         public override String ToString()
         {
-            return base.ToString() + $"Content: {ResolutionOfFile}\n";
+            return base.ToString() + $"\t\tResolution: {ResolutionOfFile}\n";
         }
 
 

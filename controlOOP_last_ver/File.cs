@@ -38,7 +38,7 @@ namespace controlOOP_last_ver
 
         public override String ToString()
         {
-            return $"Type of File: {TypeOfFile}\nName of File: {NameOfFile}\nExtension Of File: {ExtensionOfFile}\nSize Of File: {SizeOfFile}\n";
+            return $"Type: {TypeOfFile}\n\t{NameOfFile}\n\t\tExtension: {ExtensionOfFile}\n\t\tSize Of File: {SizeOfFile}\n";
         }
     }
 }
